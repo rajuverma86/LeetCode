@@ -8,8 +8,9 @@ public class ReverseString {
 		Scanner scan=new Scanner(System.in);
 	System.out.println("Enter the String ..");
 	String str=scan.nextLine();
-	String rev=new StringBuilder(str).reverse().toString();
-	System.out.println("Your Reversed String is: "+rev);
+String rev=new StringBuilder(str).reverse().toString();
+System.out.println("Your Reversed String is: "+rev);
+	scan.close();
 	}
 
 }

@@ -16,56 +16,24 @@ public static void main(String []args)
 	}
 	
 	int max=array[0];
-	for(int i=0;i<size;i++)
+	int  small=array[0];
+	for(int a=1;a<size;a++)
 	{
-		if(array[i]>max)
+if(array[a]>max)		
+{
+	max=array[a];
+}
+		
+	}
+	for(int j=0;j<array.length;j++)
+	{
+		if(array[j]<small)
 		{
-			max=array[i];
+			small=array[j];
 		}
 	}
-	System.out.println(max);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	
-//	int max=array[0];
-//	int  small=array[0];
-//	for(int a=1;a<size;a++)
-//	{
-//if(array[a]>max)		
-//{
-//	max=array[a];
-//}
-//		
-//	}
-//	for(int j=0;j<array.length;j++)
-//	{
-//		if(array[j]<small)
-//		{
-//			small=array[j];
-//		}
-//	}
-//	System.out.println("Greatest Number is: "+max);
-//	System.out.println("Smallest Number is: "+small);
+	System.out.println("Greatest Number is: "+max);
+	System.out.println("Smallest Number is: "+small);
 	
 }
 }
